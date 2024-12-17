@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-<!-- we import arjs version without NFT but with marker + location based support -->
 <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
 
 <head>
@@ -13,16 +12,37 @@
 
     <button class="button">Info</button>
 
+    <!-- Scena AR -->
     <a-scene vr-mode-ui="enabled: false" embedded arjs>
 
+        <!-- Marker 1 con modello 1 -->
         <a-marker type="pattern" url="patterns/pattern-04M.patt">
             <a-entity
-            position="0 0 0"
-            scale="0.5 0.5 0.5"
-            obj-model="obj: url(media/1.obj);mtl: url(media/1.mtl);"
-            > </a-entity>
+                position="0 0 0"
+                scale="9 9 9"
+                obj-model="obj: url(media/6.obj); mtl: url(media/6.mtl);">
+            </a-entity>
         </a-marker>
 
+        <!-- Marker 2 con modello 2 -->
+        <a-marker type="pattern" url="patterns/pattern-07A.patt">
+            <a-entity
+                position="0 0 0"
+                scale="5 5 5"
+                obj-model="obj: url(media/7.obj); mtl: url(media/7.mtl);">
+            </a-entity>
+        </a-marker>
+
+        <!-- Marker 3 con modello 3 -->
+        <a-marker type="pattern" url="patterns/pattern-09B.patt">
+            <a-entity
+                position="0 0 0"
+                scale="7 7 7"
+                obj-model="obj: url(media/8.obj); mtl: url(media/8.mtl);">
+            </a-entity>
+        </a-marker>
+
+        <!-- Telecamera AR -->
         <a-entity camera></a-entity>
 
     </a-scene>
