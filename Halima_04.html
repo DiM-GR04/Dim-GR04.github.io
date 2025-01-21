@@ -16,7 +16,16 @@
     <a-scene vr-mode-ui="enabled: false" embedded arjs>
 
         <!-- First marker with its associated 3D model -->
-        <a-marker type="pattern" url="patterns/pattern-04M.patt">
+        <a-marker type="pattern" url=1.patt">
+            <a-entity
+                position="0 0 0"
+                scale="0.5 0.5 0.5"
+                obj-model="obj: url(media/1.obj);mtl: url(media/1.mtl);"
+            ></a-entity>
+        </a-marker>
+
+        <!-- Second marker with its associated 3D model -->
+        <a-marker type="pattern" url="patterns/2.patt">
             <a-entity
                 position="0 0 0"
                 scale="0.5 0.5 0.5"
@@ -24,21 +33,12 @@
             ></a-entity>
         </a-marker>
 
-        <!-- Second marker with its associated 3D model -->
-        <a-marker type="pattern" url="patterns/pattern-05M.patt">
+        <!-- Third marker with its associated 3D model -->
+        <a-marker type="pattern" url="patterns/3.patt">
             <a-entity
                 position="0 0 0"
                 scale="0.5 0.5 0.5"
                 obj-model="obj: url(media/3.obj);mtl: url(media/3.mtl);"
-            ></a-entity>
-        </a-marker>
-
-        <!-- Third marker with its associated 3D model -->
-        <a-marker type="pattern" url="patterns/pattern-06M.patt">
-            <a-entity
-                position="0 0 0"
-                scale="0.5 0.5 0.5"
-                obj-model="obj: url(media/4.obj);mtl: url(media/4.mtl);"
             ></a-entity>
         </a-marker>
 
