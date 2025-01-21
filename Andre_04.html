@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js@3.4.2/aframe/build/aframe-ar.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aframe-gesture-detector@4.0.2/dist/aframe-gesture-detector.min.js"></script>
 </head>
 <body>
     <button class="button">Info</button>
 
     <a-scene vr-mode-ui="enabled: false" embedded arjs>
-        <!-- Component for gestures -->
+        <!-- Component for pinch zoom and rotation -->
         <script>
           AFRAME.registerComponent('pinch-zoom-rotate', {
             schema: {
@@ -24,6 +24,7 @@
               this.initialScale = this.el.object3D.scale.clone();
               this.scaleFactor = 1;
               this.rotateFactor = 0;
+              console.log('Pinch-Zoom-Rotate component initialized');
             },
             update: function () {
               if (this.data.enabled) {
@@ -39,22 +40,25 @@
             onGestureStart: function (event) {
               this.initialScale = this.el.object3D.scale.clone();
               this.rotateStart = this.el.object3D.rotation.y;
+              console.log('Gesture start detected', event.detail);
             },
             onGestureChange: function (event) {
-              // Pinch to zoom with limits
+              // Pinch to zoom
               if (event.detail.scale) {
                 this.scaleFactor = event.detail.scale;
                 const newScale = this.initialScale.x * this.scaleFactor;
                 const clampedScale = Math.min(Math.max(newScale, 0.5), 2); // Limits: 0.5x to 2x
                 this.el.object3D.scale.set(clampedScale, clampedScale, clampedScale);
+                console.log('Scaling to', clampedScale);
               }
               // Rotate
               if (event.detail.rotation) {
                 this.el.object3D.rotation.y = this.rotateStart + THREE.Math.degToRad(event.detail.rotation);
+                console.log('Rotating to', this.el.object3D.rotation.y);
               }
             },
             onGestureEnd: function () {
-              // Reset factors after gesture ends
+              console.log('Gesture end');
               this.scaleFactor = 1;
             }
           });
@@ -69,6 +73,13 @@
                 gesture-detector
                 pinch-zoom-rotate
             ></a-entity>
+            <a-plane 
+                position="0 0 0" 
+                rotation="-90 0 0" 
+                width="2" 
+                height="2" 
+                material="opacity: 0; transparent: true">
+            </a-plane>
         </a-marker>
 
         <!-- Second marker with 3D model -->
@@ -80,6 +91,13 @@
                 gesture-detector
                 pinch-zoom-rotate
             ></a-entity>
+            <a-plane 
+                position="0 0 0" 
+                rotation="-90 0 0" 
+                width="2" 
+                height="2" 
+                material="opacity: 0; transparent: true">
+            </a-plane>
         </a-marker>
 
         <!-- Third marker with 3D model -->
@@ -91,6 +109,13 @@
                 gesture-detector
                 pinch-zoom-rotate
             ></a-entity>
+            <a-plane 
+                position="0 0 0" 
+                rotation="-90 0 0" 
+                width="2" 
+                height="2" 
+                material="opacity: 0; transparent: true">
+            </a-plane>
         </a-marker>
 
         <!-- Camera -->
