@@ -3,37 +3,9 @@
 <head>
   <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-  <script>
-    AFRAME.registerComponent('pinch-zoom-rotate', {
-      schema: {
-        minScale: { type: 'number', default: 0.5 },
-        maxScale: { type: 'number', default: 2 }
-      },
-      init: function () {
-        this.scale = 1;
-        this.initialScale = null;
-        this.pinchDistance = null;
+  <!-- Aggiungi la libreria gesture component -->
+  <script src="https://cdn.jsdelivr.net/gh/karolsyr/aframe-gesture-component/dist/aframe-gesture-component.min.js"></script>
 
-        this.el.sceneEl.addEventListener('gesturestart', (e) => {
-          this.initialScale = this.scale;
-          this.pinchDistance = null;
-        });
-
-        this.el.sceneEl.addEventListener('gesturechange', (e) => {
-          if (e.scale !== undefined) {
-            const scale = this.initialScale * e.scale;
-            this.scale = Math.min(Math.max(scale, this.data.minScale), this.data.maxScale);
-            this.el.object3D.scale.set(this.scale, this.scale, this.scale);
-          }
-        });
-
-        this.el.sceneEl.addEventListener('gestureend', () => {
-          this.initialScale = null;
-          this.pinchDistance = null;
-        });
-      }
-    });
-  </script>
   <style>
     body {
       margin: 0;
@@ -58,41 +30,35 @@
   <button class="button">Info</button>
 
   <a-scene vr-mode-ui="enabled: false" embedded arjs>
-    <!-- Full-screen invisible hitbox to capture all gestures -->
-    <a-entity
-      geometry="primitive: plane; height: 100; width: 100"
-      material="opacity: 0; transparent: true"
-      position="0 0 -1"
-      rotation="-90 0 0"
-      gesture-detector>
-    </a-entity>
-
-    <!-- Marker 1 with 3D model -->
+    <!-- Marker 1 con modello 3D -->
     <a-marker type="pattern" url="patterns/1.patt">
       <a-entity
         position="0 0 0"
         scale="0.5 0.5 0.5"
         obj-model="obj: url(media/1.obj); mtl: url(media/1.mtl);"
+        gesture-handler
         pinch-zoom-rotate>
       </a-entity>
     </a-marker>
 
-    <!-- Marker 2 with 3D model -->
+    <!-- Marker 2 con modello 3D -->
     <a-marker type="pattern" url="patterns/2.patt">
       <a-entity
         position="0 0 0"
         scale="0.5 0.5 0.5"
         obj-model="obj: url(media/2.obj); mtl: url(media/2.mtl);"
+        gesture-handler
         pinch-zoom-rotate>
       </a-entity>
     </a-marker>
 
-    <!-- Marker 3 with 3D model -->
+    <!-- Marker 3 con modello 3D -->
     <a-marker type="pattern" url="patterns/3.patt">
       <a-entity
         position="0 0 0"
         scale="0.5 0.5 0.5"
         obj-model="obj: url(media/3.obj); mtl: url(media/3.mtl);"
+        gesture-handler
         pinch-zoom-rotate>
       </a-entity>
     </a-marker>
