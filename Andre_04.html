@@ -1,125 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AR.js with Gesture Support</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js@3.4.2/aframe/build/aframe-ar.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aframe-gesture-detector@4.0.2/dist/aframe-gesture-detector.min.js"></script>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  <script>
+    AFRAME.registerComponent('pinch-zoom-rotate', {
+      schema: {
+        minScale: { type: 'number', default: 0.5 },
+        maxScale: { type: 'number', default: 2 }
+      },
+      init: function () {
+        this.scale = 1;
+        this.initialScale = null;
+        this.pinchDistance = null;
+
+        this.el.sceneEl.addEventListener('gesturestart', (e) => {
+          this.initialScale = this.scale;
+          this.pinchDistance = null;
+        });
+
+        this.el.sceneEl.addEventListener('gesturechange', (e) => {
+          if (e.scale !== undefined) {
+            const scale = this.initialScale * e.scale;
+            this.scale = Math.min(Math.max(scale, this.data.minScale), this.data.maxScale);
+            this.el.object3D.scale.set(this.scale, this.scale, this.scale);
+          }
+        });
+
+        this.el.sceneEl.addEventListener('gestureend', () => {
+          this.initialScale = null;
+          this.pinchDistance = null;
+        });
+      }
+    });
+  </script>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 100;
+      padding: 10px 20px;
+      background: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
 </head>
+
 <body>
-    <button class="button">Info</button>
+  <button class="button">Info</button>
 
-    <a-scene vr-mode-ui="enabled: false" embedded arjs>
-        <!-- Component for pinch zoom and rotation -->
-        <script>
-          AFRAME.registerComponent('pinch-zoom-rotate', {
-            schema: {
-              enabled: { default: true }
-            },
-            init: function () {
-              this.initialScale = this.el.object3D.scale.clone();
-              this.scaleFactor = 1;
-              this.rotateFactor = 0;
-              console.log('Pinch-Zoom-Rotate component initialized');
-            },
-            update: function () {
-              if (this.data.enabled) {
-                this.el.addEventListener('gesturestart', this.onGestureStart.bind(this));
-                this.el.addEventListener('gesturechange', this.onGestureChange.bind(this));
-                this.el.addEventListener('gestureend', this.onGestureEnd.bind(this));
-              } else {
-                this.el.removeEventListener('gesturestart', this.onGestureStart.bind(this));
-                this.el.removeEventListener('gesturechange', this.onGestureChange.bind(this));
-                this.el.removeEventListener('gestureend', this.onGestureEnd.bind(this));
-              }
-            },
-            onGestureStart: function (event) {
-              this.initialScale = this.el.object3D.scale.clone();
-              this.rotateStart = this.el.object3D.rotation.y;
-              console.log('Gesture start detected', event.detail);
-            },
-            onGestureChange: function (event) {
-              // Pinch to zoom
-              if (event.detail.scale) {
-                this.scaleFactor = event.detail.scale;
-                const newScale = this.initialScale.x * this.scaleFactor;
-                const clampedScale = Math.min(Math.max(newScale, 0.5), 2); // Limits: 0.5x to 2x
-                this.el.object3D.scale.set(clampedScale, clampedScale, clampedScale);
-                console.log('Scaling to', clampedScale);
-              }
-              // Rotate
-              if (event.detail.rotation) {
-                this.el.object3D.rotation.y = this.rotateStart + THREE.Math.degToRad(event.detail.rotation);
-                console.log('Rotating to', this.el.object3D.rotation.y);
-              }
-            },
-            onGestureEnd: function () {
-              console.log('Gesture end');
-              this.scaleFactor = 1;
-            }
-          });
-        </script>
+  <a-scene vr-mode-ui="enabled: false" embedded arjs>
+    <!-- Full-screen invisible hitbox to capture all gestures -->
+    <a-entity
+      geometry="primitive: plane; height: 100; width: 100"
+      material="opacity: 0; transparent: true"
+      position="0 0 -1"
+      rotation="-90 0 0"
+      gesture-detector>
+    </a-entity>
 
-        <!-- First marker with 3D model -->
-        <a-marker type="pattern" url="patterns/1.patt">
-            <a-entity
-                position="0 0 0"
-                scale="0.5 0.5 0.5"
-                obj-model="obj: url(media/1.obj); mtl: url(media/1.mtl);"
-                gesture-detector
-                pinch-zoom-rotate
-            ></a-entity>
-            <a-plane 
-                position="0 0 0" 
-                rotation="-90 0 0" 
-                width="2" 
-                height="2" 
-                material="opacity: 0; transparent: true">
-            </a-plane>
-        </a-marker>
+    <!-- Marker 1 with 3D model -->
+    <a-marker type="pattern" url="patterns/1.patt">
+      <a-entity
+        position="0 0 0"
+        scale="0.5 0.5 0.5"
+        obj-model="obj: url(media/1.obj); mtl: url(media/1.mtl);"
+        pinch-zoom-rotate>
+      </a-entity>
+    </a-marker>
 
-        <!-- Second marker with 3D model -->
-        <a-marker type="pattern" url="patterns/2.patt">
-            <a-entity
-                position="0 0 0"
-                scale="0.5 0.5 0.5"
-                obj-model="obj: url(media/2.obj); mtl: url(media/2.mtl);"
-                gesture-detector
-                pinch-zoom-rotate
-            ></a-entity>
-            <a-plane 
-                position="0 0 0" 
-                rotation="-90 0 0" 
-                width="2" 
-                height="2" 
-                material="opacity: 0; transparent: true">
-            </a-plane>
-        </a-marker>
+    <!-- Marker 2 with 3D model -->
+    <a-marker type="pattern" url="patterns/2.patt">
+      <a-entity
+        position="0 0 0"
+        scale="0.5 0.5 0.5"
+        obj-model="obj: url(media/2.obj); mtl: url(media/2.mtl);"
+        pinch-zoom-rotate>
+      </a-entity>
+    </a-marker>
 
-        <!-- Third marker with 3D model -->
-        <a-marker type="pattern" url="patterns/3.patt">
-            <a-entity
-                position="0 0 0"
-                scale="0.5 0.5 0.5"
-                obj-model="obj: url(media/3.obj); mtl: url(media/3.mtl);"
-                gesture-detector
-                pinch-zoom-rotate
-            ></a-entity>
-            <a-plane 
-                position="0 0 0" 
-                rotation="-90 0 0" 
-                width="2" 
-                height="2" 
-                material="opacity: 0; transparent: true">
-            </a-plane>
-        </a-marker>
+    <!-- Marker 3 with 3D model -->
+    <a-marker type="pattern" url="patterns/3.patt">
+      <a-entity
+        position="0 0 0"
+        scale="0.5 0.5 0.5"
+        obj-model="obj: url(media/3.obj); mtl: url(media/3.mtl);"
+        pinch-zoom-rotate>
+      </a-entity>
+    </a-marker>
 
-        <!-- Camera -->
-        <a-entity camera></a-entity>
-    </a-scene>
+    <a-entity camera></a-entity>
+  </a-scene>
 </body>
 </html>
