@@ -15,12 +15,31 @@
 
     <a-scene vr-mode-ui="enabled: false" embedded arjs>
 
+        <!-- First marker with its associated 3D model -->
         <a-marker type="pattern" url="patterns/pattern-04M.patt">
             <a-entity
-            position="0 0 0"
-            scale="0.5 0.5 0.5"
-            obj-model="obj: url(media/2.obj);mtl: url(media/2.mtl);"
-            > </a-entity>
+                position="0 0 0"
+                scale="0.5 0.5 0.5"
+                obj-model="obj: url(media/2.obj);mtl: url(media/2.mtl);"
+            ></a-entity>
+        </a-marker>
+
+        <!-- Second marker with its associated 3D model -->
+        <a-marker type="pattern" url="patterns/pattern-05M.patt">
+            <a-entity
+                position="0 0 0"
+                scale="0.5 0.5 0.5"
+                obj-model="obj: url(media/3.obj);mtl: url(media/3.mtl);"
+            ></a-entity>
+        </a-marker>
+
+        <!-- Third marker with its associated 3D model -->
+        <a-marker type="pattern" url="patterns/pattern-06M.patt">
+            <a-entity
+                position="0 0 0"
+                scale="0.5 0.5 0.5"
+                obj-model="obj: url(media/4.obj);mtl: url(media/4.mtl);"
+            ></a-entity>
         </a-marker>
 
         <a-entity camera></a-entity>
