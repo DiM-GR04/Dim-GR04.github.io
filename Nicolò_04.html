@@ -1,31 +1,47 @@
 <!DOCTYPE html>
-<html>
-<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-<!-- we import arjs version without NFT but with marker + location based support -->
-<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR.js Example</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
 </head>
-
 <body>
-
     <button class="button">Info</button>
 
     <a-scene vr-mode-ui="enabled: false" embedded arjs>
-
-        <a-marker type="pattern" url="patterns/2.patt">
+        <!-- First marker with its associated 3D model -->
+        <a-marker type="pattern" url="patterns/4.patt">
             <a-entity
-            position="0 0 0"
-            scale="1 1 1"
-            obj-model="obj: url(media/anfiteatro.obj);mtl: url(media/anfiteatro.mtl);"
-            > </a-entity>
+                position="0 0 0"
+                scale="0.5 0.5 0.5"
+                obj-model="obj: url(media/7.obj); mtl: url(media/7.mtl);"
+            ></a-entity>
         </a-marker>
 
+        <!-- Second marker with its associated 3D model -->
+        <a-marker type="pattern" url="patterns/2.patt">
+            <a-entity
+                position="0 0 0"
+                scale="0.5 0.5 0.5"
+                obj-model="obj: url(media/9.obj); mtl: url(media/9.mtl);"
+            ></a-entity>
+        </a-marker>
+
+        <!-- Third marker with its associated 3D model -->
+        <a-marker type="pattern" url="patterns/3.patt">
+            <a-entity
+                position="0 0 0"
+                scale="0.5 0.5 0.5"
+                obj-model="obj: url(media/Tea.obj); mtl: url(media/Tea.mtl);"
+            ></a-entity>
+        </a-marker>
+
+        <!-- Camera -->
         <a-entity camera></a-entity>
-
     </a-scene>
-
 </body>
 </html>
