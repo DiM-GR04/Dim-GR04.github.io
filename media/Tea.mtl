@@ -1,0 +1,492 @@
+# Blender 4.3.0 MTL File: 'None'
+# www.blender.org
+
+newmtl ArcateEsterne
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd ArcateEsterne.jpg
+
+newmtl ArcateInterne
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd ArcateInterne.jpg
+
+newmtl ArchiPietra
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd ArchiPietra.jpg
+
+newmtl ArcoAccessoPatio
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd ArcoAccessoPatio.jpg
+
+newmtl BasamentoFontana
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd BasamentoFontana.jpg
+
+newmtl CapitelloCorinzioSpalti_A
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd CapitelloCorinzioSpalti_A.jpg
+
+newmtl CapitelloCorinzioSpalti_B
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd CapitelloCorinzioSpalti_B.jpg
+
+newmtl Carrucole
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd Carrucole.jpg
+
+newmtl Colonna_Palco_Inferiore
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd Colonna_Palco_Inferiore.jpg
+
+newmtl Colonna_PatioA
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd Colonna_PatioA.jpg
+
+newmtl Colonna_PatioB
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd Colonna_PatioB.jpg
+
+newmtl Colonna_PatioC
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd Colonna_PatioC.jpg
+
+newmtl Colonna_PatioD
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd Colonna_PatioD.jpg
+
+newmtl Colonne_Palco_Superiori
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd Colonne_Palco_Superiori.jpg
+
+newmtl Colonne_Spalti
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd Colonne_Spalti.jpg
+
+newmtl Corde
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd Corde.jpg
+
+newmtl Cordoli
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd Cordoli.jpg
+
+newmtl CordoliCavea
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd CordoliCavea.jpg
+
+newmtl CorinziColonnatoPalco
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd CorinziColonnatoPalco.jpg
+
+newmtl CoronamentoMuroPatio
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd CoronamentoMuroPatio.jpg
+
+newmtl CoronamentoTettoSpalti001
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd CoronamentoTettoSpalti001.jpg
+
+newmtl CorridoiScaleAccesso
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd CorridoiScaleAccesso.jpg
+
+newmtl Fontana
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd Fontana.jpg
+
+newmtl GiardinoInterno
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd GiardinoInterno.jpg
+
+newmtl GocciolatoioPatio
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd GocciolatoioPatio.jpg
+
+newmtl GradiniSpalti001
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd GradiniSpalti001.jpg
+
+newmtl MuraturaDietroPalco
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd MuraturaDietroPalco.jpg
+
+newmtl MuriPerimetraliPatio
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd MuriPerimetraliPatio.jpg
+
+newmtl Palco
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd Palco.jpg
+
+newmtl Palco_B
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd Palco_B.jpg
+
+newmtl PaliLegno
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd PaliLegno.jpg
+
+newmtl Pergolato
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd Pergolato.jpg
+
+newmtl PietraATerra
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd PietraATerra.jpg
+
+newmtl PietraPalco
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd PietraPalco.jpg
+
+newmtl PietraPalcoScena
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd PietraPalcoScena.jpg
+
+newmtl PilastriEsterni
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd PilastriEsterni.jpg
+
+newmtl ScaleAccesso
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd ScaleAccesso.jpg
+
+newmtl SottoTettoPalco
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd SottoTettoPalco.jpg
+
+newmtl SottoTettoTribune
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd SottoTettoTribune.jpg
+
+newmtl SottotettoPatio
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd SottotettoPatio.jpg
+
+newmtl SpaltiNuovi
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd SpaltiNuovi.jpg
+
+newmtl StucchiAnfiteatroEsterno
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd StucchiAnfiteatroEsterno.jpg
+
+newmtl Tendaggi
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd Tendaggi.jpg
+
+newmtl TettoPalco
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd TettoPalco.jpg
+
+newmtl TettoPatio
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd TettoPatio.jpg
+
+newmtl TettoTribune
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd TettoTribune.jpg
+
+newmtl TieniPaliVele
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd TieniPaliVele.jpg
+
+newmtl TraviPalcoscenico
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd TraviPalcoscenico.jpg
+
+newmtl TraviTettoPatio
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd TraviTettoPatio.jpg
