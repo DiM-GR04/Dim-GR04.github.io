@@ -1,0 +1,262 @@
+# Blender 4.3.0 MTL File: 'None'
+# www.blender.org
+
+newmtl IsoA_Cordolisuperiori
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd IsoA_Cordolisuperiori.jpg
+
+newmtl IsoA_colonne
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd IsoA_colonne.jpg
+
+newmtl IsoA_coriliinterni
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd IsoA_coriliinterni.jpg
+
+newmtl IsoA_cortilipietra
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd IsoA_cortilipietra.jpg
+
+newmtl IsoA_marciapiede
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd IsoA_marciapiede.jpg
+
+newmtl IsoA_muretto
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd IsoA_muretto.jpg
+
+newmtl IsoA_muriesterni
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd IsoA_muriesterni.jpg
+
+newmtl IsoA_muriinterni
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd IsoA_muriinterni.jpg
+
+newmtl IsoA_pavinterni
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd IsoA_pavinterni.jpg
+
+newmtl IsoA_sottotetto1
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd IsoA_sottotetto1.jpg
+
+newmtl IsoA_sottotetto2
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd IsoA_sottotetto2.jpg
+
+newmtl IsoA_tetti
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd IsoA_tetti.jpg
+
+newmtl IsoA_verde
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd IsoA_verde.jpg
+
+newmtl IsoB_Cordolisuperiori
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd IsoB_Cordolisuperiori.jpg
+
+newmtl IsoB_colonne
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd IsoB_colonne.jpg
+
+newmtl IsoB_cordoli_esterni
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd IsoB_cordoli_esterni.jpg
+
+newmtl IsoB_cordoliinterni
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd IsoB_cordoliinterni.jpg
+
+newmtl IsoB_marciapiede
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd IsoB_marciapiede.jpg
+
+newmtl IsoB_muri
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd IsoB_muri.jpg
+
+newmtl IsoB_muri_interni
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd IsoB_muri_interni.jpg
+
+newmtl IsoB_pavcase
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd IsoB_pavcase.jpg
+
+newmtl IsoB_pavcortili
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd IsoB_pavcortili.jpg
+
+newmtl IsoB_tetti
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd IsoB_tetti.jpg
+
+newmtl IsoB_verde
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd IsoB_verde.jpg
+
+newmtl Plane
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd Plane.jpg
+
+newmtl Vetri_scuri
+Ns 45.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 0.001000
+d 1.000000
+illum 2
+map_Kd Vetri_scuri.jpg
